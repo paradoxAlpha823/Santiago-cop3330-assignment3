@@ -1,0 +1,41 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ex044
+{
+    public
+    main()
+}
+class iterate
+{
+    iterator()
+
+}
+
+'classes below this line are methods/functions in the class(es) above
+class main
+{
+    Scanner x
+    Object obj
+    parser parser
+    subjects[]
+    input
+    check
+    output()
+}
+class iterator
+{
+    json
+    check
+    input
+    iterator
+    output()
+}
+
+
+iterator <|-- main
+iterate <|-- ex044
+main <|- iterator
+
+
+@enduml

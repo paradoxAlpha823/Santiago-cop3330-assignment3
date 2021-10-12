@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ex041
+{
+    public
+    main()
+    names(ArrayList)
+    sorter(ArrayList)
+    filemaker()
+}
+
+'classes below this line are methods/functions in the class above
+class main
+{
+    Scanner x
+    ArrayList name
+    contents of name()
+}
+class names
+{
+    ArrayList name
+    Scanner y
+}
+class sorter
+{
+    ArrayList name
+}
+class filemaker
+{
+    ArrayList name
+    output()
+}
+
+names <|-- main
+main <|-- names
+
+sorter <|- main
+main <|- sorter
+filemaker <|-- main
+
+@enduml

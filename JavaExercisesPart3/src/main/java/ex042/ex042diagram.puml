@@ -1,0 +1,27 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ex042
+{
+    public
+    main()
+    output()
+}
+
+'classes below this line are methods/functions in the class above
+class main
+{
+    Scanner x
+    printing header()
+}
+class output
+{
+    Scanner y
+    printing()
+}
+
+
+output <|-- main
+
+
+@enduml

@@ -1,0 +1,60 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ex043
+{
+    public
+    main()
+}
+class sitemaker
+{
+    maker()
+    html()
+    js()
+    cs()
+}
+
+'classes below this line are methods/functions in the class(es) above
+class main
+{
+    Scanner x
+    site
+    name
+    j
+    c
+    output()
+}
+class maker
+{
+    file
+    file1
+    made folder
+}
+class html
+{
+    file
+    infile
+    writer
+    madefile
+}
+class js
+{
+    file
+    file1
+    made folder
+}
+class cs
+{
+    file
+    file1
+    made folder
+}
+
+sitemaker <|-- ex043
+ex043 <|-- sitemaker
+
+
+sitemaker <|- main
+
+
+@enduml

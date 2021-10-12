@@ -1,0 +1,38 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class ex046
+{
+    public
+    main()
+}
+class decider
+{
+    decision()
+
+}
+
+'classes below this line are methods/functions in the class(es) above
+class main
+{
+    Scanner y
+    map map
+    for loop
+    output()
+}
+class decision
+{
+    String s
+    Scanner y
+    while loop
+    map map
+}
+
+
+decision <|-- main
+decider <|-- ex046
+ex046 <|- decider
+ main <|-- decision
+
+
+@enduml
